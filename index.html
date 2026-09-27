@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TomStocks Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --paper: #F6F8F9;
+    --surface: #FFFFFF;
+    --ink: #17212B;
+    --muted: #56636F;
+    --rule: #DCE3E8;
+    --accent: #13805A;
+    --accent-soft: #E3F2EB;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #11171C;
+      --surface: #182128;
+      --ink: #E4EAEE;
+      --muted: #97A4AE;
+      --rule: #2A363F;
+      --accent: #4CC794;
+      --accent-soft: #173A2C;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #11171C;
+    --surface: #182128;
+    --ink: #E4EAEE;
+    --muted: #97A4AE;
+    --rule: #2A363F;
+    --accent: #4CC794;
+    --accent-soft: #173A2C;
+  }
+  [hidden] { display: none !important; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 16px/1.65 var(--sans);
+    margin: 0;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 40px 64px;
+  }
+  header.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .mark { width: 36px; height: 36px; flex: none; }
+  .brand-name { font-weight: 600; font-size: 17px; letter-spacing: -0.01em; }
+  .brand-pkg { font: 400 12px/1.2 var(--mono); color: var(--muted); }
+  .lang { display: flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+  .lang button {
+    font: 500 13px/1 var(--mono);
+    letter-spacing: 0.06em;
+    padding: 8px 12px;
+    background: var(--surface);
+    color: var(--muted);
+    border: 0;
+    cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+  .lang button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  h1 {
+    font-size: clamp(28px, 5vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    margin: 32px 0 8px;
+    text-wrap: balance;
+  }
+  .meta { font: 400 13px/1.5 var(--mono); color: var(--muted); margin: 0; }
+  .summary {
+    margin: 28px 0 8px;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+  }
+  .summary h2 { margin-top: 0; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 36px 0 8px;
+    text-wrap: balance;
+  }
+  h3 { font-size: 16px; font-weight: 600; margin: 20px 0 4px; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 20px; }
+  li + li { margin-top: 4px; }
+  code {
+    font: 400 0.88em/1 var(--mono);
+    background: var(--accent-soft);
+    color: var(--ink);
+    padding: 2px 5px;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--rule); }
+  tr:last-child td { border-bottom: 0; }
+  th { font: 500 12px/1.4 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  td:first-child { font-weight: 500; white-space: nowrap; }
+  .contact {
+    font: 500 15px/1.4 var(--mono);
+    display: inline-block;
+    padding: 8px 12px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    user-select: all;
+  }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 36 36" aria-hidden="true">
+        <rect width="36" height="36" rx="9" fill="var(--accent-soft)"/>
+        <line x1="11" y1="8" x2="11" y2="26" stroke="var(--muted)" stroke-width="1.5"/>
+        <rect x="8" y="13" width="6" height="9" rx="1" fill="var(--muted)"/>
+        <line x1="18" y1="10" x2="18" y2="29" stroke="var(--accent)" stroke-width="1.5"/>
+        <rect x="15" y="14" width="6" height="11" rx="1" fill="var(--accent)"/>
+        <line x1="25" y1="5" x2="25" y2="22" stroke="var(--accent)" stroke-width="1.5"/>
+        <rect x="22" y="8" width="6" height="10" rx="1" fill="var(--accent)"/>
+      </svg>
+      <div>
+        <div class="brand-name">TomStocks</div>
+        <div class="brand-pkg">com.tomstocks</div>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="btn-en" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" id="btn-pl" data-lang="pl" aria-pressed="false">PL</button>
+    </div>
+  </header>
+
+  <!-- ============ ENGLISH ============ -->
+  <article id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 27 September 2026</p>
+
+    <section class="summary">
+      <h2>In short</h2>
+      <ul>
+        <li>TomStocks has no user accounts and does not ask for your name, email or any other personal details.</li>
+        <li>We do not run servers that collect data about you. We do not use analytics, advertising or crash-reporting services.</li>
+        <li>Your settings and watchlist are stored only on your device.</li>
+        <li>The app downloads public market data from the third-party services listed below. Like any internet request, these services can see your IP address.</li>
+      </ul>
+    </section>
+
+    <h2>Who we are</h2>
+    <p>This policy covers the TomStocks Android app (package <code>com.tomstocks</code>), published on Google Play by Tom Socks ("we", "us"). TomStocks shows technical-analysis signals and price charts for stocks and cryptocurrencies.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>The app keeps the following on your phone so it works offline and remembers your preferences:</p>
+    <ul>
+      <li>Settings such as theme, language, chart indicators, selected intervals and market areas, and whether notifications are on.</li>
+      <li>Your watchlist (the ticker symbols you choose to follow).</li>
+      <li>Downloaded market data: the signals list, price candles and company names, cached to make charts load faster.</li>
+    </ul>
+    <p>This data never leaves your device through us. You can delete it at any time by clearing the app's storage in Android settings or by uninstalling the app.</p>
+    <p>If you have Android backup turned on, Android may include the app's settings in your Google account backup. Google handles that backup under its own privacy policy, and we cannot access it.</p>
+
+    <h2>Third-party services the app connects to</h2>
+    <p>To show signals, charts and logos, the app downloads public data directly from these services. The app sends no personal information to them. A request only contains what is needed to fetch the data, such as a ticker symbol like <code>AAPL</code> and an interval. As with any internet connection, each service receives your IP address and standard technical details (for example, the time of the request). Each service handles that information under its own privacy policy.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>What the app downloads</th><th>Privacy policy</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GitHub</td>
+            <td>The signals list and price-history files (<code>raw.githubusercontent.com</code>, <code>api.github.com</code>)</td>
+            <td><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a></td>
+          </tr>
+          <tr>
+            <td>Yahoo Finance</td>
+            <td>Price history for charts (<code>query1.finance.yahoo.com</code>)</td>
+            <td><a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html" target="_blank" rel="noopener">Yahoo Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Financial Modeling Prep</td>
+            <td>Company logos (<code>financialmodelingprep.com</code>)</td>
+            <td><a href="https://site.financialmodelingprep.com/privacy-policy" target="_blank" rel="noopener">FMP Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Fonts</td>
+            <td>The app's typeface, downloaded through Google Play services</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>If you point the app at a different GitHub repository in its settings, data is downloaded from that repository instead.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Internet access</strong>: to download market data.</li>
+      <li><strong>Notifications</strong> (optional): to tell you when new signals appear. Notifications are created on your device. You can turn them off in the app or in Android settings.</li>
+      <li><strong>Run at startup</strong>: to restart the periodic background check for new signals after your phone reboots.</li>
+    </ul>
+    <p>The app does not request your location, contacts, camera, microphone, photos or files.</p>
+
+    <h2>Background activity</h2>
+    <p>About every six hours, when your phone is online, the app checks GitHub in the background for an updated signals list and downloads it if it has changed. This keeps the data fresh and lets the app notify you about new signals if notifications are on. No personal data is sent. Turning notifications off stops the alerts, and you can stop background activity completely in Android settings (App info &gt; Battery).</p>
+
+    <h2>Sharing and selling data</h2>
+    <p>We do not collect personal data, so we have nothing to sell, rent or share with anyone.</p>
+
+    <h2>Security</h2>
+    <p>All connections the app makes use encrypted HTTPS.</p>
+
+    <h2>Children</h2>
+    <p>TomStocks is not directed at children under 13, and we do not knowingly collect information from children.</p>
+
+    <h2>Your rights</h2>
+    <p>Under data-protection laws such as the GDPR, you have the right to access, correct or delete your personal data. We do not hold any personal data about you. All app data is on your device, and you control it. For data held by the third-party services above, contact them directly.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will publish the new version on this page and update the effective date at the top.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or your privacy:</p>
+    <p><span class="contact">m.gozdz@altum.lublin.pl</span></p>
+  </article>
+
+  <!-- ============ POLSKI ============ -->
+  <article id="pl" lang="pl" hidden>
+    <h1>Polityka prywatności</h1>
+    <p class="meta">Data wejścia w życie: 27 września 2026</p>
+
+    <section class="summary">
+      <h2>W skrócie</h2>
+      <ul>
+        <li>TomStocks nie ma kont użytkowników i nie prosi o imię, adres e-mail ani inne dane osobowe.</li>
+        <li>Nie prowadzimy serwerów zbierających dane o Tobie. Nie korzystamy z usług analitycznych, reklamowych ani raportowania awarii.</li>
+        <li>Twoje ustawienia i lista obserwowanych są zapisane wyłącznie na Twoim urządzeniu.</li>
+        <li>Aplikacja pobiera publiczne dane rynkowe z usług zewnętrznych wymienionych poniżej. Jak przy każdym połączeniu z internetem, usługi te widzą Twój adres IP.</li>
+      </ul>
+    </section>
+
+    <h2>Kim jesteśmy</h2>
+    <p>Niniejsza polityka dotyczy aplikacji TomStocks na Androida (pakiet <code>com.tomstocks</code>), publikowanej w Google Play przez Tom Socks („my”). TomStocks pokazuje sygnały analizy technicznej i wykresy cen akcji oraz kryptowalut.</p>
+
+    <h2>Dane zapisane na urządzeniu</h2>
+    <p>Aplikacja przechowuje na telefonie poniższe dane, aby działać offline i pamiętać Twoje preferencje:</p>
+    <ul>
+      <li>Ustawienia, takie jak motyw, język, wskaźniki na wykresie, wybrane interwały i rynki oraz to, czy powiadomienia są włączone.</li>
+      <li>Listę obserwowanych (wybrane przez Ciebie symbole tickerów).</li>
+      <li>Pobrane dane rynkowe: listę sygnałów, świece cenowe i nazwy spółek, zapisane w pamięci podręcznej, aby wykresy ładowały się szybciej.</li>
+    </ul>
+    <p>Nie przesyłamy tych danych nigdzie. Możesz je w każdej chwili usunąć, czyszcząc dane aplikacji w ustawieniach Androida lub odinstalowując aplikację.</p>
+    <p>Jeśli masz włączoną kopię zapasową Androida, system może dołączyć ustawienia aplikacji do kopii na Twoim koncie Google. Kopią tą zarządza Google zgodnie z własną polityką prywatności, a my nie mamy do niej dostępu.</p>
+
+    <h2>Usługi zewnętrzne, z którymi łączy się aplikacja</h2>
+    <p>Aby pokazać sygnały, wykresy i logotypy, aplikacja pobiera publiczne dane bezpośrednio z poniższych usług. Aplikacja nie wysyła do nich żadnych danych osobowych. Zapytanie zawiera tylko to, co potrzebne do pobrania danych, np. symbol tickera, taki jak <code>AAPL</code>, i interwał. Jak przy każdym połączeniu z internetem, każda usługa otrzymuje Twój adres IP i standardowe informacje techniczne (np. czas zapytania). Każda z nich przetwarza te informacje zgodnie z własną polityką prywatności.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Usługa</th><th>Co pobiera aplikacja</th><th>Polityka prywatności</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GitHub</td>
+            <td>Listę sygnałów i pliki z historią cen (<code>raw.githubusercontent.com</code>, <code>api.github.com</code>)</td>
+            <td><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a></td>
+          </tr>
+          <tr>
+            <td>Yahoo Finance</td>
+            <td>Historię cen do wykresów (<code>query1.finance.yahoo.com</code>)</td>
+            <td><a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html" target="_blank" rel="noopener">Yahoo Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Financial Modeling Prep</td>
+            <td>Logotypy spółek (<code>financialmodelingprep.com</code>)</td>
+            <td><a href="https://site.financialmodelingprep.com/privacy-policy" target="_blank" rel="noopener">FMP Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Fonts</td>
+            <td>Krój pisma aplikacji, pobierany przez usługi Google Play</td>
+            <td><a href="https://policies.google.com/privacy?hl=pl" target="_blank" rel="noopener">Polityka prywatności Google</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Jeśli w ustawieniach aplikacji wskażesz inne repozytorium GitHub, dane będą pobierane z tego repozytorium.</p>
+
+    <h2>Uprawnienia</h2>
+    <ul>
+      <li><strong>Dostęp do internetu</strong>: do pobierania danych rynkowych.</li>
+      <li><strong>Powiadomienia</strong> (opcjonalnie): aby informować o nowych sygnałach. Powiadomienia są tworzone na Twoim urządzeniu. Możesz je wyłączyć w aplikacji lub w ustawieniach Androida.</li>
+      <li><strong>Uruchamianie przy starcie</strong>: aby po ponownym uruchomieniu telefonu wznowić okresowe sprawdzanie nowych sygnałów.</li>
+    </ul>
+    <p>Aplikacja nie prosi o dostęp do lokalizacji, kontaktów, aparatu, mikrofonu, zdjęć ani plików.</p>
+
+    <h2>Działanie w tle</h2>
+    <p>Mniej więcej co sześć godzin, gdy telefon ma połączenie z internetem, aplikacja sprawdza w tle, czy na GitHub pojawiła się nowa lista sygnałów, i pobiera ją, jeśli się zmieniła. Dzięki temu dane są aktualne, a przy włączonych powiadomieniach aplikacja może poinformować Cię o nowych sygnałach. Nie są przy tym wysyłane żadne dane osobowe. Wyłączenie powiadomień zatrzymuje alerty, a działanie w tle możesz całkowicie ograniczyć w ustawieniach Androida (Informacje o aplikacji &gt; Bateria).</p>
+
+    <h2>Udostępnianie i sprzedaż danych</h2>
+    <p>Nie zbieramy danych osobowych, więc nie mamy czego sprzedawać, wynajmować ani udostępniać.</p>
+
+    <h2>Bezpieczeństwo</h2>
+    <p>Wszystkie połączenia aplikacji są szyfrowane (HTTPS).</p>
+
+    <h2>Dzieci</h2>
+    <p>TomStocks nie jest skierowany do dzieci poniżej 13. roku życia i nie zbieramy świadomie informacji od dzieci.</p>
+
+    <h2>Twoje prawa</h2>
+    <p>Na mocy przepisów o ochronie danych, takich jak RODO, masz prawo dostępu do swoich danych osobowych, ich poprawiania i usunięcia. Nie przechowujemy o Tobie żadnych danych osobowych. Wszystkie dane aplikacji znajdują się na Twoim urządzeniu i Ty nad nimi panujesz. W sprawie danych przetwarzanych przez wymienione usługi zewnętrzne skontaktuj się bezpośrednio z nimi.</p>
+
+    <h2>Zmiany polityki</h2>
+    <p>Jeśli polityka się zmieni, opublikujemy nową wersję na tej stronie i zaktualizujemy datę na górze.</p>
+
+    <h2>Kontakt</h2>
+    <p>Pytania dotyczące tej polityki lub prywatności:</p>
+    <p><span class="contact">m.gozdz@altum.lublin.pl</span></p>
+  </article>
+
+  <footer>© 2026 TomStocks</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.getElementById('en').hidden = lang !== 'en';
+      document.getElementById('pl').hidden = lang !== 'pl';
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var h = (location.hash || '').replace('#', '');
+    if (h === 'pl' || h === 'en') show(h);
+    else if ((navigator.language || '').toLowerCase().indexOf('pl') === 0) show('pl');
+  })();
+</script>
+</body>
+</html>
